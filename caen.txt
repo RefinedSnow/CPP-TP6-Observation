@@ -1,0 +1,6 @@
+49.1846226 -0.4072784
+chardonneret_elegant 8
+grive_musicienne 3
+mesange_charbonniere 2
+pigeon_colombin 40000
+autres 9

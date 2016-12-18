@@ -1,0 +1,6 @@
+47.105601 6.8208013
+chardonneret_elegant 1
+grive_musicienne 3
+mesange_charbonniere 5
+pigeon_colombin 50
+autres 8
