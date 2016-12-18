@@ -33,19 +33,20 @@ map<string,int> Observation::getObserved_species(){
 }
 
 map<string,int> Observation::readBirds(list<string>& l){
-	map<string int> new_birds;
+	map<string,int> new_birds;
 
 	for(string file : l){
-		import(file);
+		ifstream filestrm(file, ifstream::in);
+		import(filestrm);
 		for(auto specie : getObserved_species()){
 			new_birds[specie.first] += specie.second;
+			new_birds["total"] += specie.second;
 		}
 
 	}
 	return new_birds;
 }
 
-}
 
 ostream& operator<<(ostream& os, const Observation& obs){
 	os << "### Fiche d'observation ###" <<endl;

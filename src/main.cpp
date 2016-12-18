@@ -12,8 +12,9 @@ int main(){
 	cout << cirdies;
 
 	map<string,int> my_byrds = birdies.readBirds(l);
+	cout << "### Regroupement des fichiers ###" <<endl;
 	for(auto specie : my_byrds){
-			cout <<specie.first <<":"<<specie.second;
+			cout <<specie.first <<" : "<<specie.second<<endl;
 		}
 	/*for(string filename : l){
 
